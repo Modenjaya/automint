@@ -6,7 +6,7 @@ const fs = require('fs');
 require('dotenv').config();
 
 // Configuration
-const NFT_CONTRACT_ADDRESS = '0xf109fb45c0ce4ddf5e782be6f5582a428d899f9e';
+const NFT_CONTRACT_ADDRESS = process.env.NFT_CONTRACT;
 const PRIVATE_KEY = process.env.PRIVATE_KEY; // Store this in .env file
 const RPC_URL = process.env.RPC_URL; // Monad Testnet RPC URL
 const GAS_LIMIT = 300000;
